@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Questão 3</title>
+</head>
+<body>
+    <h2>Questão 3</h2>
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <p id="resultado4"></p>
+    <p id="resultado5"></p>
+    <p id="resultado6"></p>
+
+    <script>
+        // Sequência a
+        function proximoElementoA() {
+            let ultimoNumero = 7;
+            let proximo = ultimoNumero + 2;
+            let resultado1 = document.getElementById("resultado1");
+            resultado1.innerHTML = `Próximo elemento da sequência a: ${proximo}`;
+            console.log(`Próximo elemento da sequência a: ${proximo}`);
+        }
+
+        // Sequência b
+        function proximoElementoB() {
+            let ultimoNumero = 64;
+            let proximo = ultimoNumero * 2;
+            let resultado2 = document.getElementById("resultado2");
+            resultado2.innerHTML = `Próximo elemento da sequência b: ${proximo}`;
+            console.log(`Próximo elemento da sequência b: ${proximo}`);
+        }
+
+        // Sequência c
+        function proximoElementoC() {
+            let ultimoNumero = 36;
+            let proximo = Math.pow(Math.sqrt(ultimoNumero) + 1, 2);
+            let resultado3 = document.getElementById("resultado3");
+            resultado3.innerHTML = `Próximo elemento da sequência c: ${proximo}`;
+            console.log(`Próximo elemento da sequência c: ${proximo}`);
+        }
+
+        // Sequência d
+        function proximoElementoD() {
+            let ultimoNumero = 64;
+            let proximo = Math.pow(Math.sqrt(ultimoNumero) + 1, 2);
+            let resultado4 = document.getElementById("resultado4");
+            resultado4.innerHTML = `Próximo elemento da sequência d: ${proximo}`;
+            console.log(`Próximo elemento da sequência d: ${proximo}`);
+        }
+
+        // Sequência e (sequência de Fibonacci)
+        function proximoElementoE() {
+            let penultimo = 8;
+            let ultimo = 13;
+            let proximo = penultimo + ultimo;
+            let resultado5 = document.getElementById("resultado5");
+            resultado5.innerHTML = `Próximo elemento da sequência e: ${proximo}`;
+            console.log(`Próximo elemento da sequência e: ${proximo}`);
+        }
+
+        // Sequência f
+        function proximoElementoF() {
+            let ultimoNumero = 19;
+            let proximo = ultimoNumero + 1;
+            let resultado6 = document.getElementById("resultado6");
+            resultado6.innerHTML = `Próximo elemento da sequência f: ${proximo}`;
+            console.log(`Próximo elemento da sequência f: ${proximo}`);
+        }
+
+        // Chamar as funções para exibir os resultados
+        proximoElementoA();
+        proximoElementoB();
+        proximoElementoC();
+        proximoElementoD();
+        proximoElementoE();
+        proximoElementoF();
+    </script>
+</body>
+</html>

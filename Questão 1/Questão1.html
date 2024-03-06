@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de SOMA</title>
+</head>
+<body style="background-color: rgb(82, 85, 82);">
+    <h2>Calculadora de SOMA</h2>
+
+    <p id="resultado">Aqui será exibido o resultado da soma.</p>
+
+    <script>
+        let INDICE = 13;
+        let SOMA = 0;
+        let K = 0;
+
+        while (K < INDICE) {
+            K = K + 1;
+            SOMA = SOMA + K;
+        }
+
+        document.getElementById("resultado").innerHTML = "O valor da soma é: " + SOMA;
+    </script>
+</body>
+</html> 
